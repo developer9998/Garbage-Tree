@@ -6,6 +6,7 @@ using UnityEngine;
 using Utilla;
 using System.ComponentModel;
 using System.Collections;
+using Bepinject;
 
 namespace Garbage
 {
@@ -34,7 +35,6 @@ namespace Garbage
         GameObject Garbage6 = null;
         GameObject Garbage7 = null;
 
-
         public static ConfigEntry<bool> treeCollision;
         public static ConfigEntry<Int32> treeArea;
 
@@ -47,7 +47,7 @@ namespace Garbage
         {
             /* Set up your mod here */
             /* Code here runs at the start and whenever your mod is enabled*/
-
+            
             var customFile = new ConfigFile(Path.Combine(Paths.ConfigPath, "GarbageTree.cfg"), true);
             treeCollision = customFile.Bind("Configuration", "Tree Collision", true, "Does the tree have collision?");
             treeArea = customFile.Bind("Configuration", "Tree Area", 4, "Where does the tree spawn? 0-4 for each of the maps in the order they came out.");

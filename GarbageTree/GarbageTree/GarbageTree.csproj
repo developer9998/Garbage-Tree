@@ -284,5 +284,17 @@
     <Reference Include="websocket-sharp">
       <HintPath>$(GameAssemblyPath)\websocket-sharp.dll</HintPath>
     </Reference>
+	  <Reference Include="Zenject">
+		  <HintPath>D:\SteamLibrary\steamapps\common\Gorilla Tag\BepInEx\plugins\Extenject\Zenject.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Zenject-usage">
+		  <HintPath>D:\SteamLibrary\steamapps\common\Gorilla Tag\BepInEx\plugins\Extenject\Zenject-usage.dll</HintPath>
+	  </Reference>
+	  <Reference Include="ComputerInterface">
+		  <HintPath>D:\SteamLibrary\steamapps\common\Gorilla Tag\BepInEx\plugins\ComputerInterface\ComputerInterface.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Bepinject">
+		  <HintPath>D:\SteamLibrary\steamapps\common\Gorilla Tag\BepInEx\plugins\Bepinject-Auros\Bepinject.dll</HintPath>
+	  </Reference>
   </ItemGroup>
 </Project>
